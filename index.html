@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple form calidation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9deb23faa3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="images/Dark.png" alt="">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<!-- form validation -->
+    <div class="form-container">
+        <div class="form-wrapper">
+        
+            <form action="" id="form" name="myForm" onsubmit="return formValidation();">
+                <h2>Sign Up</h2>
+                <div id="error_message"></div>
+                <div class="form-control">
+                <label for="full name">Full Name</label>
+                <input type="text" name="Name" id="name" placeholder="Full Name">
+                </div>
+                <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" placeholder="Email">
+                </div>
+                <div class="form-control">
+                    <label for="phone number">Phone Number</label>
+                    <input type="number" name="Number" id="number" placeholder="phone Number">
+                    </div>
+                 <div class="form-control">
+                <label for="password">Password</label>
+                <input type="Password" name="Password" id="password" placeholder="Password">
+                </div>
+               
+                <div class="form-control">
+                <label for="Confirm Password">Confirm Password</label>
+                <input type="password" name="Confirm_password" id="confirm_password" placeholder="confirm password">
+                </div>
+                <div class="form-control">
+                    <button class="btn" name="submit" value="submit">Sign Up</button>
+                </div>
+                    <p>Have an account? <a href="#">Login</a></p>
+            </form>
+        </div>
+
+    </div>
+    <div class="flex-wrap">
+        <img class="footer" src="images/Dark.png" alt="">
+        <div class="text">
+        <p>&copy;2020 Landify UI kit All Rights Reserved</p>
+        </div>
+        <div class="social-icons">
+            <img src="images/image 1.png" alt="">
+            <img src="images/image2.png" alt="">
+            <img src="images/image 3.png" alt="">
+        </div>
+        </div>
+        <p class="fotter-p">Coded by &copy;zoba 2021</p>
+
+    </footer>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
