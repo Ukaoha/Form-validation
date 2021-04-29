@@ -185,6 +185,7 @@ p a {
     margin-bottom: 20px;
     padding: 0px;
     background-color: #ca1117;
+    color: #eee;
     text-align: center;
     font-size: 14px;
     transition: all 0.5s ease;
@@ -198,9 +199,13 @@ p a {
     position: relative;
     color: #FFFFFF;
 }
-@media (max-width:650px) {
+@media (max-width:600px) {
     .form-wrapper {
-        width: 380px;
+        width: 350px;
+    }
+    .social-icons{
+        flex-direction: column;
+        
     }
 }
 .fotter-p {
